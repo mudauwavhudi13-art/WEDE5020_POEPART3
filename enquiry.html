@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enquiries | Ubuntu Community Food Centre</title>
+    <meta name="description" content="Submit an enquiry to Ubuntu Community Food Centre about food assistance, food parcels and community support in Tembisa, South Africa.">
+    <meta name="keywords" content="food assistance enquiries, food parcels, community support, Ubuntu Community Food Centre, Tembisa">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Ubuntu Community Food Centre</h1>
+    <p>Supporting families and building stronger communities</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="enquiry.html" class="active">Enquiries</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<main>
+
+    <section>
+        <h2>Make an Enquiry</h2>
+
+        <p>
+            If you need food assistance or would like more information
+            about our services, please complete the enquiry form below.
+        </p>
+    </section>
+
+    <section>
+        <h2>Enquiry Form</h2>
+
+        <form id="enquiryForm">
+
+            <label for="fullname">Full Name:</label>
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter your full name"
+                required
+            >
+
+            <label for="email">Email Address:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+            >
+
+            <label for="phone">Phone Number:</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                required
+            >
+
+            <label for="enquiryType">Type of Enquiry:</label>
+            <select id="enquiryType" name="enquiryType" required>
+                <option value="">Select an enquiry type</option>
+                <option value="Food Parcels">Food Parcels</option>
+                <option value="Prepared Meals">Prepared Meals</option>
+                <option value="Community Support">Community Support</option>
+                <option value="Volunteer Opportunities">Volunteer Opportunities</option>
+                <option value="Donations">Donations</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="message">Your Message:</label>
+            <textarea
+                id="message"
+                name="message"
+                placeholder="Write your enquiry here"
+                required
+            ></textarea>
+
+            <button type="submit">Submit Enquiry</button>
+
+        </form>
+
+        <p id="response" class="response-message" aria-live="polite"></p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Ubuntu Community Food Centre. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

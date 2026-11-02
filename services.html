@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Services | Ubuntu Community Food Centre</title>
+    <meta name="description" content="Explore food parcels, prepared meals and community support services offered by Ubuntu Community Food Centre in Tembisa, South Africa.">
+    <meta name="keywords" content="food parcels, prepared meals, community support, food assistance, Tembisa">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Ubuntu Community Food Centre</h1>
+    <p>Supporting families and building stronger communities</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="enquiry.html">Enquiries</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<main class="container">
+
+    <section>
+        <h2>Our Services</h2>
+        <p>
+            We provide different services to support food-insecure
+            families and individuals in South Africa. Our aim is to
+            help people access food and receive community support.
+        </p>
+    </section>
+
+    <section>
+        <h2>Search for a Service</h2>
+
+        <label for="serviceSearch">Enter a service name</label>
+
+        <input
+            type="search"
+            id="serviceSearch"
+            placeholder="Search for a service..."
+        >
+
+        <button type="button" id="searchButton">Search</button>
+        <button type="button" id="clearSearch">Clear</button>
+
+        <p id="searchMessage" aria-live="polite">
+            All services are displayed.
+        </p>
+
+        <p id="noResults" hidden>
+            No services were found. Please try another search.
+        </p>
+    </section>
+
+    <section>
+        <h2>Services Available</h2>
+
+        <div id="serviceList">
+
+            <article class="service-item">
+                <h3>Food Parcels</h3>
+                <img src="images/food-parcels.jpg"
+                     alt="Food parcels containing groceries for families"
+                     class="service-image">
+                <p>
+                    We provide essential food parcels to families
+                    experiencing food insecurity.
+                </p>
+                <a href="enquiry.html">Enquire about food assistance</a>
+            </article>
+
+            <article class="service-item">
+                <h3>Prepared Meals</h3>
+                <img src="images/prepared-meals.jpg"
+                     alt="Prepared meals ready for community distribution"
+                     class="service-image">
+                <p>
+                    We support people in need by providing prepared meals
+                    to help address hunger in the community.
+                </p>
+                <a href="enquiry.html">Enquire about prepared meals</a>
+            </article>
+
+            <article class="service-item">
+                <h3>Community Support</h3>
+                <img src="images/community-support.jpg"
+                     alt="A volunteer giving a food parcel to a community member"
+                     class="service-image">
+                <p>
+                    We encourage community support programmes that help
+                    families and individuals facing difficult situations.
+                </p>
+                <a href="enquiry.html">Enquire about community support</a>
+            </article>
+
+            <article class="service-item">
+                <h3>Volunteer Opportunities</h3>
+                <img src="images/volunteers.jpg"
+                     alt="Volunteers packing food parcels"
+                     class="service-image">
+                <p>
+                    Community members can offer their time and skills
+                    to assist with our activities.
+                </p>
+                <a href="contact.html">Contact us to volunteer</a>
+            </article>
+
+            <article class="service-item">
+                <h3>Donation Support</h3>
+                <img src="images/donations.jpg"
+                     alt="Donated groceries and food supplies"
+                     class="service-image">
+                <p>
+                    Donations of food, money and useful resources can
+                    help us support families in need.
+                </p>
+                <a href="contact.html">Contact us about donations</a>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Ubuntu Community Food Centre. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

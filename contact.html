@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Ubuntu Community Food Centre</title>
+    <meta name="description" content="Contact Ubuntu Community Food Centre in Tembisa, South Africa about donations, volunteering and community food assistance.">
+    <meta name="keywords" content="contact Ubuntu Community Food Centre, food donations, volunteering, community assistance, Tembisa">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Ubuntu Community Food Centre</h1>
+    <p>Supporting families and building stronger communities</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="enquiry.html">Enquiries</a>
+    <a href="contact.html" class="active">Contact Us</a>
+</nav>
+
+<main>
+
+    <section>
+        <h2>Contact Us</h2>
+
+        <p>
+            We welcome questions, suggestions, donations and offers
+            of assistance. Please complete the contact form below.
+        </p>
+    </section>
+
+    <section>
+        <h2>Contact Form</h2>
+
+        <form id="contactForm">
+
+            <label for="contactName">Full Name:</label>
+            <input
+                type="text"
+                id="contactName"
+                name="contactName"
+                placeholder="Enter your full name"
+                required
+            >
+
+            <label for="contactEmail">Email Address:</label>
+            <input
+                type="email"
+                id="contactEmail"
+                name="contactEmail"
+                placeholder="Enter your email address"
+                required
+            >
+
+            <label for="contactSubject">Subject:</label>
+            <input
+                type="text"
+                id="contactSubject"
+                name="contactSubject"
+                placeholder="Enter the subject"
+                required
+            >
+
+            <label for="contactMessage">Message:</label>
+            <textarea
+                id="contactMessage"
+                name="contactMessage"
+                placeholder="Write your message here"
+                required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+        <p id="contactResponse"
+           class="response-message"
+           aria-live="polite"></p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Ubuntu Community Food Centre. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

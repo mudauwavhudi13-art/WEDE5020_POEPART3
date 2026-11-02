@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ubuntu Community Food Centre | Home</title>
+    <meta name="description" content="Ubuntu Community Food Centre supports food-insecure families in Tembisa, South Africa through food assistance and community programmes.">
+    <meta name="keywords" content="Ubuntu Community Food Centre, food assistance, food parcels, Tembisa, community support">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet map styling -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- JavaScript files -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Ubuntu Community Food Centre</h1>
+    <p>Supporting families and building stronger communities</p>
+</header>
+
+<nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="enquiry.html">Enquiries</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<main>
+
+    <section class="welcome-section">
+        <h2>Welcome to Ubuntu Community Food Centre</h2>
+
+        <p>
+            Ubuntu Community Food Centre is a non-profit organisation
+            that aims to support food-insecure families and individuals
+            in South Africa.
+        </p>
+
+        <img src="images/food.jpg"
+             alt="Food assistance provided to members of the community"
+             class="main-image">
+    </section>
+
+    <section class="mission-section">
+        <h2>Our Mission</h2>
+
+        <p>
+            Our mission is to help families access food and support
+            people in need. We believe that working together can create
+            a stronger and healthier community.
+        </p>
+    </section>
+
+    <section class="gallery-section">
+        <h2>Our Community Gallery</h2>
+
+        <p>
+            View images that represent our community support activities.
+        </p>
+
+        <div class="gallery">
+            <img src="images/food.jpg"
+                 alt="Food support for families"
+                 class="gallery-image"
+                 tabindex="0">
+
+            <img src="images/community.webp"
+                 alt="Community members supporting one another"
+                 class="gallery-image"
+                 tabindex="0">
+        </div>
+    </section>
+
+    <!-- Image gallery lightbox -->
+    <div id="lightbox"
+         class="lightbox"
+         aria-hidden="true"
+         role="dialog"
+         aria-label="Enlarged gallery image">
+
+        <button type="button"
+                id="closeLightbox"
+                aria-label="Close image">&times;</button>
+
+        <img id="lightboxImage" src="" alt="">
+    </div>
+
+    <!-- Interactive location map -->
+    <section class="location-section">
+        <h2>Find Our Location</h2>
+
+        <p>
+            Ubuntu Community Food Centre is located at
+            1496 Merca Street, Extension 5, Leboeng, Tembisa,
+            Gauteng, South Africa.
+        </p>
+
+        <p>
+            The map marker shows an approximate position on Merca Street,
+            not a verified property entrance.
+        </p>
+
+        <div id="map"
+             role="application"
+             aria-label="Map showing the approximate location of Ubuntu Community Food Centre">
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Ubuntu Community Food Centre. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
